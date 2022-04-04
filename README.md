@@ -4,4 +4,4 @@
 
 React, TypeScript, Viteで作ったフィルターアプリです。
 
-デモ　https://stigma-66-filter-app.netlify.app
+デモ　https://stigma-66-react-filter.netlify.app

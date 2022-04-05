@@ -13,9 +13,10 @@ const App:VFC = () => {
   const scale = width && height && getScale(width, height, 300)
   return (
     <div>
+      <span>画像 : </span>
       <ImageInput onLoad={({image}) => {setImageData(getImageData(image))}} />
       <br />
-      <span>フィルター：</span>
+      <span>フィルター : </span>
       <Select options={filters} onChange={i => setFilterIndex(i)} />
       <br />
       {width && height && scale && <div>width: {width}, height: {height}, scale: {Math.round(scale * 100)}%</div>}

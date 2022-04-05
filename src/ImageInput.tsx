@@ -14,7 +14,7 @@ const ImageInput:VFC<ImageInputProps> = ({onLoad}) => {
     image.onload = () => {onLoad({image, url})}
   }
   return (
-    <input type="file" onChange={onChange} />
+    <input type="file" accept="image/*" onChange={onChange} />
   )
 }
 
